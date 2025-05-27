@@ -47,17 +47,7 @@ export class AppComponent {
 
   getProjectLink(title: string): string {
     const projectLinks: ProjectLinks = {
-      'Tic-Tac-Toe Online': 'https://tic-tac-toe-online-ricky.netlify.app/',
-      'Tic-Tac-Toe React': 'https://rickytictactoereact.netlify.app/',
-      'E-Commerce': 'https://github.com/RickyBv1/food-delivery',
-      'Random Roulette': 'https://github.com/RickyBv1/Random-roulette',
-      'Pong game': 'https://rickybv1.github.io/Pong/',
-      'Log In form': 'https://github.com/RickyBv1/LogIn',
       Pokedex: 'https://github.com/RickyBv1/Pokedex',
-      'Typing test': 'https://rickybv1.github.io/Typing-test/',
-      Calculator: 'https://rickybv1.github.io/Calculator/',
-      'Digital Clock': 'https://rickybv1.github.io/Digital-clock/',
-      'Portfolio V1.0': 'https://github.com/RickyBv1/Portfolio',
     };
     return projectLinks[title] || '#';
   }

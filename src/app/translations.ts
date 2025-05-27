@@ -44,88 +44,12 @@ Beyond coding, I'm always looking for new challenges both on and off the screen.
     //text for the project cards
     projectsList: [
       {
-        title: 'Tic-Tac-Toe Online',
-        description:
-          'Online multiplayer game made with Angular 19, NodeJs and Socket.IO',
-        technologies: 'Angular, SCSS, TypeScript, Socket.IO',
-        linkText: 'Watch the project',
-      },
-      {
-        title: 'Tic-Tac-Toe React',
-        description: 'Local multiplayer game made with React 18',
-        technologies: 'React, CSS, JavaScript',
-        linkText: 'Watch the project',
-      },
-      {
-        title: 'E-Commerce',
-        description:
-          'Single page E-Commerce app made with Angular 19 and Typescript',
-        technologies: 'Angular, SCSS, TypeScript',
-        linkText: 'Watch the repository',
-      },
-      {
-        title: 'Random Roulette',
-        description:
-          'Made for random gifts exchanges events like secret santa made with the ionic framework',
-        technologies: 'Angular, SCSS, TypeScript, Ionic',
-        linkText: 'Watch the repository',
-      },
-      {
-        title: 'Pong game',
-        description:
-          'Retro "Pong" game that can be played in local multiplayer with 2 people or just one person against the CPU',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Watch the project',
-      },
-      {
-        title: 'Log In form',
-        description:
-          'Log in form made with html, css, Javascript and using NodeJs, dotenv and express',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Watch the repository',
-      },
-      {
-        title: 'To do app React',
-        description:
-          'To do app made with React 18, that allows you to add, edit and delete tasks',
-        technologies: 'React, CSS, TypeScript',
-        linkText: 'Watch the repository',
-      },
-      {
         title: 'Pokedex',
         description:
           'Tool that consumes PokeAPI to see the information of different types of pokemons',
         technologies: 'Angular, SCSS, TypeScript',
         linkText: 'Watch the repository',
-      },
-      {
-        title: 'Typing test',
-        description:
-          'Typing test that show how fast can you type different words in a minute, and also shows how manny letters you typed and how many mistakes you made',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Watch the project',
-      },
-      {
-        title: 'Calculator',
-        description:
-          'Basic calculator that can be used both by clicking the screen or with the keyboard made with html, css and javascript',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Watch the project',
-      },
-      {
-        title: 'Digital Clock',
-        description:
-          'Digital clock that shows live the current time of your current time zone made with a seven-segment display',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Watch the project',
-      },
-      {
-        title: 'Portfolio V1.0',
-        description:
-          'The first version of my portfolio made with just HTML, CSS, and JavaScript',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Watch the project',
-      },
+      }
     ],
   },
 
@@ -158,88 +82,13 @@ Más allá del código, siempre busco nuevos retos dentro y fuera de la pantalla
     //texto para las tarjetas de proyectos
     projectsList: [
       {
-        title: 'Tic-Tac-Toe Online',
-        description:
-          'Juego multijugador en linea hecho con Angular 19, NodeJs y Socket.IO',
-        technologies: 'Angular, SCSS, TypeScript, Socket.IO',
-        linkText: 'Mira el proyecto',
-      },
-      {
-        title: 'Tic-Tac-Toe React',
-        description: 'Juego multijugador local hecho con React 18',
-        technologies: 'React, CSS, JavaScript',
-        linkText: 'Mira el proyecto',
-      },
-      {
-        title: 'E-Commerce',
-        description:
-          'App de comercio electrónico de una sola página hecho con Angular 19 y Typescript',
-        technologies: 'Angular, SCSS, TypeScript',
-        linkText: 'Mira el repositorio',
-      },
-      {
-        title: 'Random Roulette',
-        description:
-          'Hecho para intercambios de regalos aleatorios, como el amigo secreto, creado con el framework Ionic',
-        technologies: 'Angular, SCSS, TypeScript, Ionic',
-        linkText: 'Mira el repositorio',
-      },
-      {
-        title: 'Pong game',
-        description:
-          'Juego retro de "Pong" que se puede jugar en multijugador local con 2 personas o solo una persona contra la CPU',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Mira el proyecto',
-      },
-      {
-        title: 'Log In form',
-        description:
-          'Formulario de inicio de sesión creado con HTML, CSS y JavaScript, utilizando Node.js, dotenv y Express',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Mira el repositorio',
-      },
-      {
-        title: 'To do app React',
-        description:
-          'Aplicación de tareas hecha con React 18, que te permite agregar, editar y eliminar tareas',
-        technologies: 'React, CSS, TypeScript',
-        linkText: 'Mira el repositorio',
-      },
-      {
         title: 'Pokedex',
         description:
           'Herramienta que consume la PokeAPI para ver la información de distintos tipos de Pokémon',
         technologies: 'Angular, SCSS, TypeScript',
         linkText: 'Mira el repositorio',
       },
-      {
-        title: 'Typing test',
-        description:
-          'Prueba de mecanografía que muestra qué tan rápido puedes escribir diferentes palabras en un minuto, además de cuántas letras escribiste y cuántos errores cometiste',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Mira el proyecto',
-      },
-      {
-        title: 'Calculator',
-        description:
-          'Calculadora básica que se puede usar tanto haciendo clic en la pantalla como con el teclado, creada con HTML, CSS y JavaScript',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Mira el proyecto',
-      },
-      {
-        title: 'Digital Clock',
-        description:
-          'Reloj digital que muestra en vivo la hora actual de tu zona horaria, utilizando una pantalla de siete segmentos',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Mira el proyecto',
-      },
-      {
-        title: 'Portfolio V1.0',
-        description:
-          'La primera versión de mi portafolio, creada solo con HTML, CSS y JavaScript',
-        technologies: 'HTML, CSS, JavaScript',
-        linkText: 'Mira el proyecto',
-      },
+      
     ],
   },
 };
