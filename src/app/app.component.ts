@@ -81,7 +81,7 @@ export class AppComponent {
     const cvPath = 'cv/CV.pdf';
     const link = document.createElement('a');
     link.href = cvPath;
-    link.download = 'Ricardo_Cortes_CV.pdf';
+    link.download = 'Camilo_Escudero_CV.pdf';
     link.target = '_blank';
     link.click();
   }
