@@ -173,37 +173,5 @@
         </div>
       </ng-container>
     </div>
-    <div class="menu" [class.menu-visible]="isShowMenu">
-      <div class="menu-items">
-        <a
-          [ngClass]="{ active: view === View.Home }"
-          (click)="handleGoToMenu(View.Home)"
-          >{{ languageService.getTranslation("home") }}</a
-        >
-        <a
-          [ngClass]="{ active: view === View.AboutMe }"
-          (click)="handleGoToMenu(View.AboutMe)"
-          >{{ languageService.getTranslation("aboutMe") }}</a
-        >
-        <a
-          [ngClass]="{ active: view === View.Projects }"
-          (click)="handleGoToMenu(View.Projects)"
-          >{{ languageService.getTranslation("projects") }}</a
-        >
-        <a
-          [ngClass]="{ active: view === View.Contact }"
-          (click)="handleGoToMenu(View.Contact)"
-          >{{ languageService.getTranslation("contact2") }}</a
-        >
-      </div>
-    </div>
-    <a class="menu-icon"
-      ><img
-        src="icons/menu.png"
-        alt="menu"
-        class="hamburger"
-        width="30px"
-        (click)="isShowMenu = !isShowMenu"
-    />    </a>
   </div>
 </div>
