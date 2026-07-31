@@ -42,20 +42,33 @@ export const translations: TranslationData = {
     impactLatam: '7',
     impactLatamHint: 'LATAM countries reached in production',
     aboutMe: 'About',
-    aboutTitle: 'Software Engineer focused on SaaS that ships.',
+    aboutTitle: 'Engineer by craft. Curious by nature.',
     aboutIntro:
-      'Full-Stack engineer with 3+ years delivering multi-tenant systems in production. Stack: TypeScript, NestJS, Vue 3/Nuxt 3, React, MySQL/PostgreSQL, AWS, Docker. I care about clean architecture, performance, reviews, tests, CI/CD, and applied AI (Bedrock, Gemini, MCP).',
+      'I am a Full-Stack Software Engineer with 3+ years building multi-tenant SaaS and production systems across LATAM. Professionally, I design APIs, modular backends, and modern UIs with TypeScript, NestJS, Vue 3/Nuxt 3, React, MySQL/PostgreSQL, AWS, and Docker. I care about clean architecture, performance, code review, testing, CI/CD, and applied AI (Bedrock, Gemini, MCP).\n\nPersonally, I recharge outdoors and through community: reading, hiking mountains and exploring routes, basketball, swimming, video games, and Scouts. Those habits shape how I work — disciplined, collaborative, and always ready for the next challenge.',
     hobbiesKicker: 'Outside of code',
     hobbiesLead:
-      'I disconnect with the same energy I bring to shipping software: challenges, focus, and a bit of fun.',
-    hobbyGamesTitle: 'Video games',
-    hobbyGamesText:
-      'Strategy, creativity, and problem-solving in another format — my reset after deep coding sessions.',
+      'My free time balances focus, movement, and community — the same energy I bring to shipping software.',
+    hobbyReadTitle: 'Reading',
+    hobbyReadText:
+      'I read to expand perspective, stay curious, and keep learning beyond the IDE.',
+    hobbyHikeTitle: 'Hiking & exploration',
+    hobbyHikeText:
+      'Walking, climbing hills, and exploring trails helps me disconnect and reset with intention.',
     hobbyBasketTitle: 'Basketball',
     hobbyBasketText:
-      'Team rhythm, quick decisions, and staying active. It keeps my mind sharp outside the keyboard.',
+      'Team pace, quick decisions, and staying active — my competitive reset.',
+    hobbySwimTitle: 'Swimming',
+    hobbySwimText:
+      'Rhythm and endurance. Swimming clears my head after deep work.',
+    hobbyGamesTitle: 'Video games',
+    hobbyGamesText:
+      'Strategy, creativity, and problem-solving in another format.',
+    hobbyScoutsTitle: 'Scouts',
+    hobbyScoutsText:
+      'Service, leadership, and outdoor skills. Scouts keep me grounded in values and teamwork.',
     stackKicker: 'Core stack',
-    hobbiesLine: 'Outside of coding, I enjoy video games and basketball.',
+    hobbiesLine:
+      'I enjoy reading, hiking, basketball, swimming, video games, and Scouts.',
     experienceKicker: 'Experience',
     projects: 'Work',
     projectsTitle: 'Selected public work',
@@ -154,20 +167,33 @@ export const translations: TranslationData = {
     impactLatam: '7',
     impactLatamHint: 'países LATAM alcanzados en producción',
     aboutMe: 'Sobre mí',
-    aboutTitle: 'Software Engineer enfocado en SaaS que llega a producción.',
+    aboutTitle: 'Ingeniero por oficio. Curioso por naturaleza.',
     aboutIntro:
-      'Ingeniero Full-Stack con 3+ años entregando sistemas multi-tenant en producción. Stack: TypeScript, NestJS, Vue 3/Nuxt 3, React, MySQL/PostgreSQL, AWS, Docker. Me importa la arquitectura limpia, el rendimiento, reviews, tests, CI/CD e IA aplicada (Bedrock, Gemini, MCP).',
+      'Soy Software Engineer Full-Stack con 3+ años construyendo SaaS multi-tenant y sistemas en producción en LATAM. En lo laboral diseño APIs, backends modulares y UIs modernas con TypeScript, NestJS, Vue 3/Nuxt 3, React, MySQL/PostgreSQL, AWS y Docker. Me importan la arquitectura limpia, el rendimiento, el code review, los tests, el CI/CD y la IA aplicada (Bedrock, Gemini, MCP).\n\nEn lo personal recargo energía con lectura, caminatas, subir cerros e incursiones, básquet, natación, videojuegos y Scouts. Esos hábitos marcan cómo trabajo: con disciplina, colaboración y ganas del siguiente reto.',
     hobbiesKicker: 'Fuera del código',
     hobbiesLead:
-      'Desconecto con la misma energía con la que entrego software: retos, foco y un poco de diversión.',
+      'Mi tiempo libre combina foco, movimiento y comunidad — la misma energía con la que entrego software.',
+    hobbyReadTitle: 'Lectura',
+    hobbyReadText:
+      'Leo para ampliar perspectiva, mantener la curiosidad y seguir aprendiendo fuera del IDE.',
+    hobbyHikeTitle: 'Cerros e incursiones',
+    hobbyHikeText:
+      'Caminar, subir cerros y explorar rutas me ayuda a desconectar y resetear con intención.',
+    hobbyBasketTitle: 'Básquet',
+    hobbyBasketText:
+      'Ritmo de equipo, decisiones rápidas y movimiento — mi reset competitivo.',
+    hobbySwimTitle: 'Natación',
+    hobbySwimText:
+      'Ritmo y resistencia. Nadar me limpia la cabeza después del trabajo profundo.',
     hobbyGamesTitle: 'Videojuegos',
     hobbyGamesText:
-      'Estrategia, creatividad y resolución de problemas en otro formato — mi reset después de sesiones intensas.',
-    hobbyBasketTitle: 'Basketball',
-    hobbyBasketText:
-      'Ritmo de equipo, decisiones rápidas y movimiento. Me mantiene fresco fuera del teclado.',
+      'Estrategia, creatividad y resolución de problemas en otro formato.',
+    hobbyScoutsTitle: 'Scouts',
+    hobbyScoutsText:
+      'Servicio, liderazgo y vida outdoor. Los Scouts me mantienen anclado en valores y trabajo en equipo.',
     stackKicker: 'Stack principal',
-    hobbiesLine: 'Fuera del código, disfruto de los videojuegos y el basketball.',
+    hobbiesLine:
+      'Disfruto la lectura, subir cerros, básquet, natación, videojuegos y Scouts.',
     experienceKicker: 'Experiencia',
     projects: 'Trabajo',
     projectsTitle: 'Trabajo público seleccionado',
