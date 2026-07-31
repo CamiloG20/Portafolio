@@ -179,47 +179,41 @@
 .hero {
   position: relative;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 110px clamp(20px, 4vw, 48px) 64px;
+}
+
+.hero-layout {
+  width: min(1120px, 100%);
+  margin: 0 auto;
   display: grid;
-  align-items: end;
-  padding: 120px clamp(20px, 4vw, 48px) 72px;
-  isolation: isolate;
-}
-
-.hero-media {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background: url("/img/Camilo-perfil.png") 72% center / cover no-repeat;
-  transform: scale(1.02);
-  animation: heroZoom 8s ease-out both;
-}
-
-.hero-scrim {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(
-    100deg,
-    rgba(14, 17, 20, 0.94) 0%,
-    rgba(14, 17, 20, 0.78) 38%,
-    rgba(14, 17, 20, 0.28) 68%,
-    rgba(14, 17, 20, 0.12) 100%
-  );
-}
-
-body.light-theme .hero-scrim {
-  background: linear-gradient(
-    100deg,
-    rgba(238, 241, 239, 0.96) 0%,
-    rgba(238, 241, 239, 0.82) 40%,
-    rgba(14, 17, 20, 0.18) 72%,
-    rgba(14, 17, 20, 0.08) 100%
-  );
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
 }
 
 .hero-content {
-  max-width: 720px;
+  max-width: 640px;
   animation: fadeUp 0.9s ease 0.15s both;
+}
+
+.hero-portrait {
+  justify-self: end;
+  width: min(100%, 420px);
+  aspect-ratio: 1 / 1.15;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+  overflow: hidden;
+  animation: fadeUp 0.9s ease 0.25s both;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
 }
 
 .eyebrow {
@@ -235,8 +229,8 @@ body.light-theme .hero-scrim {
   margin: 0;
   font-family: "Syne", sans-serif;
   font-weight: 800;
-  font-size: clamp(3rem, 8vw, 6.2rem);
-  line-height: 0.95;
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  line-height: 0.98;
   letter-spacing: -0.04em;
 }
 
@@ -260,6 +254,109 @@ body.light-theme .hero-scrim {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 28px;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+
+  a {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    transition: color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+
+    &:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.hobbies-kicker {
+  margin-top: 28px;
+}
+
+.hobby-row {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+
+.hobby-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+
+  &:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  strong {
+    display: block;
+    font-family: "Syne", sans-serif;
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+  }
+
+  span {
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+}
+
+.hobby-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.stack-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+
+  img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    filter: grayscale(0.15);
+    transition: transform 0.2s ease, filter 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      filter: grayscale(0);
+    }
+  }
 }
 
 .btn {
@@ -556,15 +653,6 @@ body.light-theme .btn-primary {
   }
 }
 
-@keyframes heroZoom {
-  from {
-    transform: scale(1.1);
-  }
-  to {
-    transform: scale(1.04);
-  }
-}
-
 @media (max-width: 900px) {
   .nav {
     display: none;
@@ -574,10 +662,17 @@ body.light-theme .btn-primary {
     display: inline-flex;
   }
 
+  .hero-layout,
   .about-grid,
   .contact-grid,
   .impact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-portrait {
+    justify-self: start;
+    width: min(100%, 360px);
+    order: -1;
   }
 
   .project {

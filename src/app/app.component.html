@@ -43,22 +43,37 @@
 
   <main>
     <section class="hero" id="top">
-      <div class="hero-media" aria-hidden="true"></div>
-      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">{{ languageService.getTranslation("locationLine") }}</p>
+          <h1>Camilo Escudero</h1>
+          <p class="hero-role">{{ languageService.getTranslation("description") }}</p>
+          <p class="hero-lead">{{ languageService.getTranslation("heroLead") }}</p>
 
-      <div class="hero-content">
-        <p class="eyebrow">{{ languageService.getTranslation("locationLine") }}</p>
-        <h1>Camilo Escudero</h1>
-        <p class="hero-role">{{ languageService.getTranslation("description") }}</p>
-        <p class="hero-lead">{{ languageService.getTranslation("heroLead") }}</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="mailto:camiloescudero19@gmail.com">
+              {{ languageService.getTranslation("contactMeButton") }}
+            </a>
+            <button type="button" class="btn btn-secondary" (click)="downloadCV()">
+              {{ languageService.getTranslation("downloadCV") }}
+            </button>
+          </div>
 
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="mailto:camiloescudero19@gmail.com">
-            {{ languageService.getTranslation("contactMeButton") }}
-          </a>
-          <button type="button" class="btn btn-secondary" (click)="downloadCV()">
-            {{ languageService.getTranslation("downloadCV") }}
-          </button>
+          <div class="hero-socials" aria-label="Social">
+            <a href="https://github.com/CamiloG20" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 7.5c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .26.18.58.69.48A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/camilo-escudero-ab0068191/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22 2H2v20h20V2z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/camiloescudero19/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm11.25 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-portrait">
+          <img src="/img/Camilo-perfil.png" alt="Camilo Escudero" />
         </div>
       </div>
     </section>
@@ -89,7 +104,44 @@
           <p class="section-kicker">{{ languageService.getTranslation("aboutMe") }}</p>
           <h2>{{ languageService.getTranslation("aboutTitle") }}</h2>
           <p class="body-copy" [innerHTML]="formatText(languageService.getTranslation('aboutIntro'))"></p>
-          <p class="body-copy muted">{{ languageService.getTranslation("hobbiesLine") }}</p>
+
+          <p class="section-kicker hobbies-kicker">{{ languageService.getTranslation("hobbiesKicker") }}</p>
+          <p class="body-copy">{{ languageService.getTranslation("hobbiesLead") }}</p>
+
+          <div class="hobby-row">
+            <div class="hobby-item">
+              <span class="hobby-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5S14.67 12 15.5 12s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+              </span>
+              <div>
+                <strong>{{ languageService.getTranslation("hobbyGamesTitle") }}</strong>
+                <span>{{ languageService.getTranslation("hobbyGamesText") }}</span>
+              </div>
+            </div>
+            <div class="hobby-item">
+              <span class="hobby-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/></svg>
+              </span>
+              <div>
+                <strong>{{ languageService.getTranslation("hobbyBasketTitle") }}</strong>
+                <span>{{ languageService.getTranslation("hobbyBasketText") }}</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="section-kicker hobbies-kicker">{{ languageService.getTranslation("stackKicker") }}</p>
+          <div class="stack-icons" aria-label="Tech stack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" alt="NestJS" title="NestJS" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue" title="Vue" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" title="AWS" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular" title="Angular" />
+          </div>
         </div>
 
         <div class="experience">

@@ -45,6 +45,16 @@ export const translations: TranslationData = {
     aboutTitle: 'Software Engineer focused on SaaS that ships.',
     aboutIntro:
       'Full-Stack engineer with 3+ years delivering multi-tenant systems in production. Stack: TypeScript, NestJS, Vue 3/Nuxt 3, React, MySQL/PostgreSQL, AWS, Docker. I care about clean architecture, performance, reviews, tests, CI/CD, and applied AI (Bedrock, Gemini, MCP).',
+    hobbiesKicker: 'Outside of code',
+    hobbiesLead:
+      'I disconnect with the same energy I bring to shipping software: challenges, focus, and a bit of fun.',
+    hobbyGamesTitle: 'Video games',
+    hobbyGamesText:
+      'Strategy, creativity, and problem-solving in another format — my reset after deep coding sessions.',
+    hobbyBasketTitle: 'Basketball',
+    hobbyBasketText:
+      'Team rhythm, quick decisions, and staying active. It keeps my mind sharp outside the keyboard.',
+    stackKicker: 'Core stack',
     hobbiesLine: 'Outside of coding, I enjoy video games and basketball.',
     experienceKicker: 'Experience',
     projects: 'Work',
@@ -147,6 +157,16 @@ export const translations: TranslationData = {
     aboutTitle: 'Software Engineer enfocado en SaaS que llega a producción.',
     aboutIntro:
       'Ingeniero Full-Stack con 3+ años entregando sistemas multi-tenant en producción. Stack: TypeScript, NestJS, Vue 3/Nuxt 3, React, MySQL/PostgreSQL, AWS, Docker. Me importa la arquitectura limpia, el rendimiento, reviews, tests, CI/CD e IA aplicada (Bedrock, Gemini, MCP).',
+    hobbiesKicker: 'Fuera del código',
+    hobbiesLead:
+      'Desconecto con la misma energía con la que entrego software: retos, foco y un poco de diversión.',
+    hobbyGamesTitle: 'Videojuegos',
+    hobbyGamesText:
+      'Estrategia, creatividad y resolución de problemas en otro formato — mi reset después de sesiones intensas.',
+    hobbyBasketTitle: 'Basketball',
+    hobbyBasketText:
+      'Ritmo de equipo, decisiones rápidas y movimiento. Me mantiene fresco fuera del teclado.',
+    stackKicker: 'Stack principal',
     hobbiesLine: 'Fuera del código, disfruto de los videojuegos y el basketball.',
     experienceKicker: 'Experiencia',
     projects: 'Trabajo',
