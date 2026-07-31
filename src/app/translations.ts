@@ -18,7 +18,7 @@ export const translations: TranslationData = {
   en: {
     hello: 'HELLO',
     im: "I'm Camilo",
-    description: `Software Engineer · Full-Stack (SaaS · APIs · Cloud)`,
+    description: `Full-Stack · SaaS · Cloud`,
     contactMeButton: 'Contact Me',
     downloadCV: 'Download CV',
     home: 'HOME',
@@ -26,11 +26,15 @@ export const translations: TranslationData = {
 <br><br>
 Stack: <b>TypeScript · NestJS · Vue 3/Nuxt 3 · React · MySQL/PostgreSQL · AWS · Docker</b>.
 <br><br>
-At TwiinsHRM: <b>160+ PRs</b> merged, <b>+80%</b> critical query performance, and work across <b>4+ tenants</b> serving users in <b>7 LATAM countries</b>.
-<br><br>
 Outside of coding, I enjoy video games and basketball.
 <br><br>
 Let's build something great together! 🚀`,
+    impactPrs: '160+ PRs',
+    impactPrsHint: 'merged in 8 months',
+    impactPerf: '+80%',
+    impactPerfHint: 'critical queries',
+    impactLatam: '7 countries',
+    impactLatamHint: 'LATAM users',
     aboutMe: 'ABOUT ME',
     aboutMeDescription: `I'm a Full-Stack Software Engineer based in Quito, Ecuador — open to remote / hybrid / on-site roles.
 <br><br>
@@ -90,7 +94,7 @@ Outside of coding, I enjoy video games and basketball.`,
   es: {
     hello: 'HOLA',
     im: 'Soy Camilo',
-    description: `Software Engineer · Full-Stack (SaaS · APIs · Cloud)`,
+    description: `Full-Stack · SaaS · Cloud`,
     contactMeButton: 'Contáctame',
     downloadCV: 'Descargar CV',
     home: 'INICIO',
@@ -98,11 +102,15 @@ Outside of coding, I enjoy video games and basketball.`,
 <br><br>
 Stack: <b>TypeScript · NestJS · Vue 3/Nuxt 3 · React · MySQL/PostgreSQL · AWS · Docker</b>.
 <br><br>
-En TwiinsHRM: <b>160+ PRs</b> mergeados, <b>+80%</b> en queries críticas y trabajo en <b>4+ tenants</b> para usuarios en <b>7 países LATAM</b>.
-<br><br>
 Fuera del código, disfruto de los videojuegos y el basketball.
 <br><br>
 ¡Construyamos algo increíble juntos! 🚀`,
+    impactPrs: '160+ PRs',
+    impactPrsHint: 'mergeados en 8 meses',
+    impactPerf: '+80%',
+    impactPerfHint: 'queries críticas',
+    impactLatam: '7 países',
+    impactLatamHint: 'usuarios LATAM',
     aboutMe: 'SOBRE MÍ',
     aboutMeDescription: `Soy Software Engineer Full-Stack en Quito, Ecuador — abierto a roles remoto / híbrido / presencial.
 <br><br>

@@ -90,6 +90,20 @@
       <ng-container *ngIf="view === 'isHome'">
         <div class="profile-pic"></div>
         <div class="p40">
+          <div class="impact-row" aria-label="Impact metrics">
+            <div class="impact-chip">
+              <strong>{{ languageService.getTranslation("impactPrs") }}</strong>
+              <span>{{ languageService.getTranslation("impactPrsHint") }}</span>
+            </div>
+            <div class="impact-chip">
+              <strong>{{ languageService.getTranslation("impactPerf") }}</strong>
+              <span>{{ languageService.getTranslation("impactPerfHint") }}</span>
+            </div>
+            <div class="impact-chip">
+              <strong>{{ languageService.getTranslation("impactLatam") }}</strong>
+              <span>{{ languageService.getTranslation("impactLatamHint") }}</span>
+            </div>
+          </div>
           <p
             [innerHTML]="formatText(languageService.getTranslation('homeInfo'))"
           >

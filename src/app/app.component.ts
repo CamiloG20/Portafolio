@@ -76,9 +76,9 @@ export class AppComponent {
 
   getProjectImagePath(title: string): string {
     const images: ProjectLinks = {
-      'Job Hunter AI': 'icons/default.png',
-      'Prueba Tecnica': 'icons/default.png',
-      Portfolio: 'projects/portfolio-v1.0.png',
+      'Job Hunter AI': 'projects/job-hunter-ai.jpg',
+      'Prueba Tecnica': 'projects/prueba-tecnica.jpg',
+      Portfolio: 'projects/portfolio-live.jpg',
       Pokedex: 'projects/pokedex.png',
     };
     return images[title] || 'icons/default.png';
