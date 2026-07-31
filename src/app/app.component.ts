@@ -1,47 +1,42 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { LanguageService } from './services/language.service';
-import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 
 interface ProjectLinks {
   [key: string]: string;
 }
 
-enum View {
-  Home = 'isHome',
-  AboutMe = 'isAboutMe',
-  Projects = 'isProjects',
-  Contact = 'isContact',
+interface ExperienceItem {
+  role: string;
+  period: string;
+  summary: string;
 }
 
 @Component({
   selector: 'app-root',
-  imports: [FlexLayoutModule, CommonModule],
+  imports: [CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
   constructor(public languageService: LanguageService) {}
 
-  title = 'Portfolio2.0';
-  view: View = View.Home;
-  isDarkMode: boolean = false;
-
-  View = View;
-
-  handleGoToMenu(name: View) {
-    this.view = name;
-  }
+  isDarkMode = true;
 
   toggleTheme() {
     this.isDarkMode = !this.isDarkMode;
-    document.body.classList.toggle('dark-theme', this.isDarkMode);
+    document.body.classList.toggle('light-theme', !this.isDarkMode);
   }
 
   toggleLanguage() {
     const newLang =
       this.languageService.getCurrentLanguage() === 'en' ? 'es' : 'en';
     this.languageService.setLanguage(newLang);
+  }
+
+  scrollTo(id: string, event: Event) {
+    event.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   getProjectLink(title: string): string {
@@ -82,14 +77,18 @@ export class AppComponent {
     return images[title] || 'icons/default.png';
   }
 
+  getExperience(): ExperienceItem[] {
+    const lang = this.languageService.getCurrentLanguage();
+    return this.languageService.translations[lang]['experienceList'] as unknown as ExperienceItem[];
+  }
+
   formatText(text: string): string {
     return text.replace(/\n/g, '<br>');
   }
 
   downloadCV() {
-    const cvPath = 'cv/CV.pdf';
     const link = document.createElement('a');
-    link.href = cvPath;
+    link.href = 'cv/CV.pdf';
     link.download = 'Camilo_Escudero_CV.pdf';
     link.target = '_blank';
     link.click();
