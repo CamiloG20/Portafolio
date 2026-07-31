@@ -16,6 +16,11 @@
 
   .p40 {
     padding: 40px;
+
+    a {
+      color: inherit;
+      font-weight: 700;
+    }
   }
 
   .left {
@@ -73,6 +78,33 @@
       gap: 10px;
       margin-top: 10px;
       z-index: 9;
+    }
+
+    .side-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      z-index: 9;
+      max-width: 280px;
+
+      a {
+        color: var(--whiteish);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+        opacity: 0.85;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 2px;
+
+        &.active,
+        &:hover {
+          opacity: 1;
+          color: #54b7f0;
+          border-bottom-color: #54b7f0;
+          transform: none;
+        }
+      }
     }
 
     .theme-toggle,

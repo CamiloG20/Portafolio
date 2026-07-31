@@ -21,6 +21,30 @@
           {{ languageService.getCurrentLanguage() === "en" ? "ES" : "EN" }}
         </button>
       </div>
+
+      <nav class="side-nav" aria-label="Primary">
+        <a
+          [ngClass]="{ active: view === View.Home }"
+          (click)="handleGoToMenu(View.Home)"
+          >{{ languageService.getTranslation("home") }}</a
+        >
+        <a
+          [ngClass]="{ active: view === View.AboutMe }"
+          (click)="handleGoToMenu(View.AboutMe)"
+          >{{ languageService.getTranslation("aboutMe") }}</a
+        >
+        <a
+          [ngClass]="{ active: view === View.Projects }"
+          (click)="handleGoToMenu(View.Projects)"
+          >{{ languageService.getTranslation("projects") }}</a
+        >
+        <a
+          [ngClass]="{ active: view === View.Contact }"
+          (click)="handleGoToMenu(View.Contact)"
+          >{{ languageService.getTranslation("contact2") }}</a
+        >
+      </nav>
+
       <div class="content">
         <h4>{{ languageService.getTranslation("hello") }}</h4>
         <h1 [ngClass]="{ small: view != 'isHome' }">
@@ -108,8 +132,26 @@
       <ng-container *ngIf="view === 'isContact'">
         <div class="p40">
           <h4>{{ languageService.getTranslation("contact") }}</h4>
-          <p class="mb8 mt20">Email:</p>
-          <div><b>cescuderosoft&#64;gmail.com</b></div>
+          <p class="mb8 mt20">
+            {{ languageService.getTranslation("emailPrimary") }}
+          </p>
+          <div>
+            <b
+              ><a href="mailto:cescuderosoft@gmail.com"
+                >cescuderosoft&#64;gmail.com</a
+              ></b
+            >
+          </div>
+          <p class="mb8 mt20">
+            {{ languageService.getTranslation("emailSecondary") }}
+          </p>
+          <div>
+            <b
+              ><a href="mailto:camiloescudero19@gmail.com"
+                >camiloescudero19&#64;gmail.com</a
+              ></b
+            >
+          </div>
           <p class="mb8 mt20">
             {{ languageService.getTranslation("phoneNumber") }}
           </p>
@@ -117,7 +159,6 @@
         </div>
       </ng-container>
     </div>
-    <!-- Menú siempre en el DOM, pero oculto visualmente -->
     <div class="menu" [class.menu-visible]="isShowMenu">
       <div class="menu-items">
         <a

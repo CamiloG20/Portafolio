@@ -32,6 +32,7 @@ export class AppComponent {
 
   handleGoToMenu(name: View) {
     this.view = name;
+    this.isShowMenu = false;
   }
 
   toggleTheme() {
@@ -47,6 +48,10 @@ export class AppComponent {
 
   getProjectLink(title: string): string {
     const projectLinks: ProjectLinks = {
+      'Job Hunter AI': 'https://github.com/CamiloG20/job-hunter-ai',
+      'Prueba Tecnica':
+        'https://github.com/CamiloG20/Prueba-Tecnica-Desarrollador',
+      Portfolio: 'https://cescuderog20-portafolio.netlify.app/',
       Pokedex: 'https://github.com/RickyBv1/Pokedex',
     };
     return projectLinks[title] || '#';
@@ -70,7 +75,13 @@ export class AppComponent {
   }
 
   getProjectImagePath(title: string): string {
-    return 'projects/' + title.toLowerCase().replace(/ /g, '-') + '.png';
+    const images: ProjectLinks = {
+      'Job Hunter AI': 'icons/default.png',
+      'Prueba Tecnica': 'icons/default.png',
+      Portfolio: 'projects/portfolio-v1.0.png',
+      Pokedex: 'projects/pokedex.png',
+    };
+    return images[title] || 'icons/default.png';
   }
 
   formatText(text: string): string {
@@ -85,7 +96,7 @@ export class AppComponent {
     link.target = '_blank';
     link.click();
   }
-  
+
   goToLinkedIn() {
     window.open(
       'https://www.linkedin.com/in/ricardo-cortes-b29739179/',
