@@ -51,7 +51,7 @@ export class AppComponent {
       'Prueba Tecnica':
         'https://github.com/CamiloG20/Prueba-Tecnica-Desarrollador',
       Portfolio: 'https://cescuderog20-portafolio.netlify.app/',
-      'Hogwarts Dex': 'https://github.com/CamiloG20/hogwarts-dex',
+      'Hogwarts Dex': 'https://hogwarts-dex.vercel.app',
     };
     return projectLinks[title] || '#';
   }

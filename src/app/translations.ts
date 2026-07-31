@@ -142,7 +142,7 @@ export const translations: TranslationData = {
         description:
           'Pokédex-style catalog of Harry Potter characters and fantastical creatures via Potter DB.',
         technologies: 'React · TypeScript · Vite · Potter DB API',
-        linkText: 'View repository',
+        linkText: 'Open live site',
       },
     ],
   },
@@ -268,7 +268,7 @@ export const translations: TranslationData = {
         description:
           'Catálogo estilo Pokédex de personajes y criaturas fantásticas de Harry Potter con Potter DB.',
         technologies: 'React · TypeScript · Vite · Potter DB API',
-        linkText: 'Ver repositorio',
+        linkText: 'Abrir sitio live',
       },
     ],
   },
