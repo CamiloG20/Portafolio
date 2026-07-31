@@ -78,7 +78,7 @@ export class AppComponent {
       'Job Hunter AI': 'projects/job-hunter-ai.jpg',
       'Prueba Tecnica': 'projects/prueba-tecnica.jpg',
       Portfolio: 'projects/portfolio-live.jpg',
-      'Hogwarts Dex': 'projects/hogwarts-dex.svg',
+      'Hogwarts Dex': 'projects/hogwarts-dex.jpg',
     };
     return images[title] || 'icons/default.png';
   }

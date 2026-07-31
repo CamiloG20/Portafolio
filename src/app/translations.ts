@@ -140,8 +140,8 @@ export const translations: TranslationData = {
       {
         title: 'Hogwarts Dex',
         description:
-          'Pokédex-style catalog of Harry Potter characters and fantastical creatures via Potter DB.',
-        technologies: 'React · TypeScript · Vite · Potter DB API',
+          'Pokédex-style app for wizards, beasts and spells — React + live Harry Potter APIs.',
+        technologies: 'React · TypeScript · Vite · HP-API · Potter DB',
         linkText: 'Open live site',
       },
     ],
@@ -266,8 +266,8 @@ export const translations: TranslationData = {
       {
         title: 'Hogwarts Dex',
         description:
-          'Catálogo estilo Pokédex de personajes y criaturas fantásticas de Harry Potter con Potter DB.',
-        technologies: 'React · TypeScript · Vite · Potter DB API',
+          'App estilo Pokédex de brujos, bestias y hechizos — React + APIs de Harry Potter.',
+        technologies: 'React · TypeScript · Vite · HP-API · Potter DB',
         linkText: 'Abrir sitio live',
       },
     ],
