@@ -104,8 +104,8 @@
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: url("/img/Camilo.jpg") center 18% / cover no-repeat;
-  transform: scale(1.04);
+  background: url("/img/Camilo-perfil.png") 72% center / cover no-repeat;
+  transform: scale(1.02);
   animation: heroZoom 8s ease-out both;
 }
 
@@ -113,7 +113,23 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: var(--photo-scrim);
+  background: linear-gradient(
+    100deg,
+    rgba(14, 17, 20, 0.94) 0%,
+    rgba(14, 17, 20, 0.78) 38%,
+    rgba(14, 17, 20, 0.28) 68%,
+    rgba(14, 17, 20, 0.12) 100%
+  );
+}
+
+body.light-theme .hero-scrim {
+  background: linear-gradient(
+    100deg,
+    rgba(238, 241, 239, 0.96) 0%,
+    rgba(238, 241, 239, 0.82) 40%,
+    rgba(14, 17, 20, 0.18) 72%,
+    rgba(14, 17, 20, 0.08) 100%
+  );
 }
 
 .hero-content {
