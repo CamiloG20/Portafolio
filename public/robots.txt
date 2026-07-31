@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cescuderog20-portafolio.netlify.app/sitemap.xml

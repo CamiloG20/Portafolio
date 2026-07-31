@@ -120,29 +120,30 @@ export const translations: TranslationData = {
       {
         title: 'Job Hunter AI',
         description:
-          'Multi-tenant SaaS for automated job search with AI (Gemini).',
+          'Multi-tenant SaaS that automates job search with Gemini — scrapes, ranks and tracks opportunities end to end.',
         technologies: 'Vue 3 · Express · SQLite · Gemini',
         linkText: 'View repository',
       },
       {
-        title: 'Prueba Tecnica',
+        title: 'Hogwarts Dex',
         description:
-          'Employee + family CRUD with documented REST API and validations.',
-        technologies: 'Angular · PHP · MySQL',
-        linkText: 'View repository',
+          'Pokédex-style React app for wizards, beasts and 300+ spells using live Harry Potter APIs.',
+        technologies: 'React · TypeScript · Vite · HP-API · Potter DB',
+        linkText: 'Open live site',
       },
       {
         title: 'Portfolio',
-        description: 'This site — Angular portfolio with i18n and Netlify deploy.',
+        description:
+          'This site — Angular portfolio with i18n, dark/light mode and Netlify production deploy.',
         technologies: 'Angular · TypeScript · SCSS',
         linkText: 'Open live site',
       },
       {
-        title: 'Hogwarts Dex',
+        title: 'Prueba Tecnica',
         description:
-          'Pokédex-style app for wizards, beasts and spells — React + live Harry Potter APIs.',
-        technologies: 'React · TypeScript · Vite · HP-API · Potter DB',
-        linkText: 'Open live site',
+          'Employee + family CRUD with documented REST API, validations and MySQL persistence.',
+        technologies: 'Angular · PHP · MySQL',
+        linkText: 'View repository',
       },
     ],
   },
@@ -246,29 +247,30 @@ export const translations: TranslationData = {
       {
         title: 'Job Hunter AI',
         description:
-          'SaaS multi-tenant de búsqueda de empleo con IA (Gemini).',
+          'SaaS multi-tenant que automatiza la búsqueda de empleo con Gemini — scrapea, rankea y hace seguimiento de punta a punta.',
         technologies: 'Vue 3 · Express · SQLite · Gemini',
         linkText: 'Ver repositorio',
       },
       {
-        title: 'Prueba Tecnica',
+        title: 'Hogwarts Dex',
         description:
-          'CRUD de empleados y familiares con API REST documentada.',
-        technologies: 'Angular · PHP · MySQL',
-        linkText: 'Ver repositorio',
+          'App React estilo Pokédex de brujos, bestias y 300+ hechizos con APIs de Harry Potter en vivo.',
+        technologies: 'React · TypeScript · Vite · HP-API · Potter DB',
+        linkText: 'Abrir sitio live',
       },
       {
         title: 'Portfolio',
-        description: 'Este sitio — Angular con i18n y deploy en Netlify.',
+        description:
+          'Este sitio — Angular con i18n, modo claro/oscuro y deploy en producción en Netlify.',
         technologies: 'Angular · TypeScript · SCSS',
         linkText: 'Abrir sitio live',
       },
       {
-        title: 'Hogwarts Dex',
+        title: 'Prueba Tecnica',
         description:
-          'App estilo Pokédex de brujos, bestias y hechizos — React + APIs de Harry Potter.',
-        technologies: 'React · TypeScript · Vite · HP-API · Potter DB',
-        linkText: 'Abrir sitio live',
+          'CRUD de empleados y familiares con API REST documentada, validaciones y MySQL.',
+        technologies: 'Angular · PHP · MySQL',
+        linkText: 'Ver repositorio',
       },
     ],
   },

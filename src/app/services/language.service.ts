@@ -8,10 +8,13 @@ export class LanguageService {
   private currentLanguage: 'en' | 'es' = 'en';
   translations: TranslationData = translations;
 
-  constructor() {}
+  constructor() {
+    this.applyDocumentLang(this.currentLanguage);
+  }
 
   setLanguage(lang: 'en' | 'es') {
     this.currentLanguage = lang;
+    this.applyDocumentLang(lang);
   }
 
   getTranslation(key: string): string {
@@ -24,5 +27,11 @@ export class LanguageService {
 
   getCurrentLanguage(): 'en' | 'es' {
     return this.currentLanguage;
+  }
+
+  private applyDocumentLang(lang: 'en' | 'es') {
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = lang;
+    }
   }
 }
