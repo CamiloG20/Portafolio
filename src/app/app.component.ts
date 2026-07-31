@@ -51,7 +51,7 @@ export class AppComponent {
       'Prueba Tecnica':
         'https://github.com/CamiloG20/Prueba-Tecnica-Desarrollador',
       Portfolio: 'https://cescuderog20-portafolio.netlify.app/',
-      Pokedex: 'https://github.com/RickyBv1/Pokedex',
+      'Hogwarts Dex': 'https://github.com/CamiloG20/hogwarts-dex',
     };
     return projectLinks[title] || '#';
   }
@@ -78,7 +78,7 @@ export class AppComponent {
       'Job Hunter AI': 'projects/job-hunter-ai.jpg',
       'Prueba Tecnica': 'projects/prueba-tecnica.jpg',
       Portfolio: 'projects/portfolio-live.jpg',
-      Pokedex: 'projects/pokedex.png',
+      'Hogwarts Dex': 'projects/hogwarts-dex.svg',
     };
     return images[title] || 'icons/default.png';
   }

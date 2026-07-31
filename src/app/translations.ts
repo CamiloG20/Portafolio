@@ -138,9 +138,10 @@ export const translations: TranslationData = {
         linkText: 'Open live site',
       },
       {
-        title: 'Pokedex',
-        description: 'Early frontend practice consuming PokeAPI.',
-        technologies: 'Angular · SCSS · TypeScript',
+        title: 'Hogwarts Dex',
+        description:
+          'Pokédex-style catalog of Harry Potter characters and fantastical creatures via Potter DB.',
+        technologies: 'React · TypeScript · Vite · Potter DB API',
         linkText: 'View repository',
       },
     ],
@@ -263,9 +264,10 @@ export const translations: TranslationData = {
         linkText: 'Abrir sitio live',
       },
       {
-        title: 'Pokedex',
-        description: 'Práctica temprana de frontend consumiendo PokeAPI.',
-        technologies: 'Angular · SCSS · TypeScript',
+        title: 'Hogwarts Dex',
+        description:
+          'Catálogo estilo Pokédex de personajes y criaturas fantásticas de Harry Potter con Potter DB.',
+        technologies: 'React · TypeScript · Vite · Potter DB API',
         linkText: 'Ver repositorio',
       },
     ],
