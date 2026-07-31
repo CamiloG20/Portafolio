@@ -24,7 +24,6 @@ export class AppComponent {
   constructor(public languageService: LanguageService) {}
 
   title = 'Portfolio2.0';
-  isShowMenu: boolean = false;
   view: View = View.Home;
   isDarkMode: boolean = false;
 
@@ -32,7 +31,6 @@ export class AppComponent {
 
   handleGoToMenu(name: View) {
     this.view = name;
-    this.isShowMenu = false;
   }
 
   toggleTheme() {
@@ -95,12 +93,5 @@ export class AppComponent {
     link.download = 'Camilo_Escudero_CV.pdf';
     link.target = '_blank';
     link.click();
-  }
-
-  goToLinkedIn() {
-    window.open(
-      'https://www.linkedin.com/in/ricardo-cortes-b29739179/',
-      '_blank'
-    );
   }
 }
