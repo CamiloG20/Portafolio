@@ -1,5 +1,10 @@
 <div class="site" [class.nav-open]="isNavOpen">
-  <div class="site-bg" aria-hidden="true"></div>
+  <div class="site-bg" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <span class="grid-glow"></span>
+  </div>
 
   <header class="topbar">
     <a class="brand" href="#top" (click)="scrollTo('top', $event)">
@@ -48,6 +53,14 @@
           <p class="eyebrow">{{ languageService.getTranslation("locationLine") }}</p>
           <h1>Camilo Escudero</h1>
           <p class="hero-role">{{ languageService.getTranslation("description") }}</p>
+          <div class="hero-tech" aria-label="Full-Stack SaaS Cloud">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" alt="NestJS" title="NestJS" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue" title="Vue" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" title="AWS" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
+          </div>
           <p class="hero-lead">{{ languageService.getTranslation("heroLead") }}</p>
 
           <div class="hero-ctas">
