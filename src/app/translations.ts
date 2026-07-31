@@ -31,7 +31,9 @@ export const translations: TranslationData = {
     themeToggle: 'Toggle theme',
     themeLight: 'Light',
     themeDark: 'Dark',
+    menuToggle: 'Open menu',
     navImpact: 'Impact',
+    navPrivate: 'Demos',
     impactKicker: 'Selected impact',
     impactPrs: '160+',
     impactPrsHint: 'PRs merged at TwiinsHRM in 8 months',
@@ -47,15 +49,22 @@ export const translations: TranslationData = {
     experienceKicker: 'Experience',
     projects: 'Work',
     projectsTitle: 'Selected public work',
+    privateKicker: 'Private work',
+    privateTitle: 'Production systems available on request',
+    privateLead:
+      'My strongest delivery sits in private repos. I can walk you through architecture, trade-offs, and demos live.',
+    privateTwiins: 'Multi-tenant HR SaaS in production across LATAM.',
+    privateVacari: 'Clinical SPA + microservices platform (demo under NDA/request).',
+    privateCta: 'Request a demo',
     contact: 'Contact',
     contact2: 'Contact',
     contactTitle: 'Let’s build the next system together.',
     contactLead:
-      'Open to Full-Stack / SaaS roles across LATAM. Reach me on either email — both are active.',
+      'Open to Full-Stack / SaaS roles across LATAM. Both emails below are active — pick either one.',
     phoneNumber: 'Phone',
     emailPrimary: 'Primary email',
     emailSecondary: 'Secondary email',
-    footerNote: 'Available for opportunities',
+    footerNote: 'Open to opportunities · Remote LATAM',
 
     experienceList: [
       {
@@ -89,7 +98,7 @@ export const translations: TranslationData = {
         title: 'Job Hunter AI',
         description:
           'Multi-tenant SaaS for automated job search with AI (Gemini).',
-        technologies: 'Vue 3 · NestJS · SQLite · Gemini',
+        technologies: 'Vue 3 · Express · SQLite · Gemini',
         linkText: 'View repository',
       },
       {
@@ -124,7 +133,9 @@ export const translations: TranslationData = {
     themeToggle: 'Cambiar tema',
     themeLight: 'Claro',
     themeDark: 'Oscuro',
+    menuToggle: 'Abrir menú',
     navImpact: 'Impacto',
+    navPrivate: 'Demos',
     impactKicker: 'Impacto seleccionado',
     impactPrs: '160+',
     impactPrsHint: 'PRs mergeados en TwiinsHRM en 8 meses',
@@ -140,15 +151,22 @@ export const translations: TranslationData = {
     experienceKicker: 'Experiencia',
     projects: 'Trabajo',
     projectsTitle: 'Trabajo público seleccionado',
+    privateKicker: 'Trabajo privado',
+    privateTitle: 'Sistemas en producción con demo bajo solicitud',
+    privateLead:
+      'Mi entrega más fuerte está en repos privados. Puedo mostrarte arquitectura, decisiones y demos en vivo.',
+    privateTwiins: 'SaaS multi-tenant de HR en producción en LATAM.',
+    privateVacari: 'Plataforma clínica SPA + microservicios (demo bajo solicitud/NDA).',
+    privateCta: 'Pedir una demo',
     contact: 'Contacto',
     contact2: 'Contacto',
     contactTitle: 'Construyamos el siguiente sistema juntos.',
     contactLead:
-      'Abierto a roles Full-Stack / SaaS en LATAM. Escríbeme a cualquiera de los dos emails — ambos están activos.',
+      'Abierto a roles Full-Stack / SaaS en LATAM. Ambos emails están activos — usa el que prefieras.',
     phoneNumber: 'Teléfono',
     emailPrimary: 'Email principal',
     emailSecondary: 'Email secundario',
-    footerNote: 'Disponible para oportunidades',
+    footerNote: 'Abierto a oportunidades · Remoto LATAM',
 
     experienceList: [
       {
@@ -182,7 +200,7 @@ export const translations: TranslationData = {
         title: 'Job Hunter AI',
         description:
           'SaaS multi-tenant de búsqueda de empleo con IA (Gemini).',
-        technologies: 'Vue 3 · NestJS · SQLite · Gemini',
+        technologies: 'Vue 3 · Express · SQLite · Gemini',
         linkText: 'Ver repositorio',
       },
       {

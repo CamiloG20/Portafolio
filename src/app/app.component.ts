@@ -22,6 +22,7 @@ export class AppComponent {
   constructor(public languageService: LanguageService) {}
 
   isDarkMode = true;
+  isNavOpen = false;
 
   toggleTheme() {
     this.isDarkMode = !this.isDarkMode;
@@ -34,8 +35,13 @@ export class AppComponent {
     this.languageService.setLanguage(newLang);
   }
 
+  toggleNav() {
+    this.isNavOpen = !this.isNavOpen;
+  }
+
   scrollTo(id: string, event: Event) {
     event.preventDefault();
+    this.isNavOpen = false;
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 

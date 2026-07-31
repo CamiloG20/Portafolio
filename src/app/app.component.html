@@ -1,4 +1,4 @@
-<div class="site">
+<div class="site" [class.nav-open]="isNavOpen">
   <div class="site-bg" aria-hidden="true"></div>
 
   <header class="topbar">
@@ -10,6 +10,7 @@
       <a href="#impact" (click)="scrollTo('impact', $event)">{{ languageService.getTranslation("navImpact") }}</a>
       <a href="#about" (click)="scrollTo('about', $event)">{{ languageService.getTranslation("aboutMe") }}</a>
       <a href="#projects" (click)="scrollTo('projects', $event)">{{ languageService.getTranslation("projects") }}</a>
+      <a href="#private" (click)="scrollTo('private', $event)">{{ languageService.getTranslation("navPrivate") }}</a>
       <a href="#contact" (click)="scrollTo('contact', $event)">{{ languageService.getTranslation("contact2") }}</a>
     </nav>
 
@@ -20,8 +21,25 @@
       <button type="button" class="ghost-btn" (click)="toggleLanguage()">
         {{ languageService.getCurrentLanguage() === "en" ? "ES" : "EN" }}
       </button>
+      <button
+        type="button"
+        class="menu-toggle"
+        (click)="toggleNav()"
+        [attr.aria-expanded]="isNavOpen"
+        [attr.aria-label]="languageService.getTranslation('menuToggle')"
+      >
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
+  <div class="mobile-nav" *ngIf="isNavOpen" role="dialog" [attr.aria-label]="languageService.getTranslation('menuToggle')">
+    <a href="#impact" (click)="scrollTo('impact', $event)">{{ languageService.getTranslation("navImpact") }}</a>
+    <a href="#about" (click)="scrollTo('about', $event)">{{ languageService.getTranslation("aboutMe") }}</a>
+    <a href="#projects" (click)="scrollTo('projects', $event)">{{ languageService.getTranslation("projects") }}</a>
+    <a href="#private" (click)="scrollTo('private', $event)">{{ languageService.getTranslation("navPrivate") }}</a>
+    <a href="#contact" (click)="scrollTo('contact', $event)">{{ languageService.getTranslation("contact2") }}</a>
+  </div>
 
   <main>
     <section class="hero" id="top">
@@ -112,6 +130,37 @@
       </div>
     </section>
 
+    <section class="section private" id="private">
+      <div class="section-inner private-box">
+        <p class="section-kicker">{{ languageService.getTranslation("privateKicker") }}</p>
+        <h2>{{ languageService.getTranslation("privateTitle") }}</h2>
+        <p class="body-copy">{{ languageService.getTranslation("privateLead") }}</p>
+        <ul class="private-list">
+          <li>
+            <strong>TwiinsHRM</strong>
+            <span>{{ languageService.getTranslation("privateTwiins") }}</span>
+          </li>
+          <li>
+            <strong>vacari-platform</strong>
+            <span>{{ languageService.getTranslation("privateVacari") }}</span>
+          </li>
+        </ul>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="mailto:cescuderosoft@gmail.com?subject=Demo%20request">
+            {{ languageService.getTranslation("privateCta") }}
+          </a>
+          <a
+            class="btn btn-secondary"
+            href="https://www.linkedin.com/in/camilo-escudero-ab0068191/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="section contact" id="contact">
       <div class="section-inner contact-grid">
         <div>
@@ -131,7 +180,7 @@
           </div>
           <div>
             <span>{{ languageService.getTranslation("phoneNumber") }}</span>
-            <a href="tel:+593963178998">+593 963 17 8998</a>
+            <a href="tel:+593997497832">+593 997 497 832</a>
           </div>
           <div class="socials">
             <a href="https://github.com/CamiloG20" target="_blank" rel="noopener noreferrer">GitHub</a>

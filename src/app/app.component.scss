@@ -72,6 +72,91 @@
 .top-actions {
   display: flex;
   gap: 8px;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--text);
+    border-radius: 2px;
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 74px;
+  left: 16px;
+  right: 16px;
+  z-index: 35;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-elevated) 94%, transparent);
+  backdrop-filter: blur(16px);
+  animation: fadeDown 0.25s ease both;
+
+  a {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text);
+    border-radius: 8px;
+
+    &:hover {
+      background: color-mix(in srgb, var(--accent) 14%, transparent);
+      color: var(--accent);
+    }
+  }
+}
+
+.private-box {
+  max-width: 820px;
+}
+
+.private-list {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+
+    &:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    strong {
+      font-family: "Syne", sans-serif;
+      font-size: 1.15rem;
+    }
+
+    span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  }
 }
 
 .ghost-btn {
@@ -483,6 +568,10 @@ body.light-theme .btn-primary {
 @media (max-width: 900px) {
   .nav {
     display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
   }
 
   .about-grid,
